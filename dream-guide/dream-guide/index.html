@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="今日、あなたが訪れる夢をご案内します。">
+<title>DREAM GUIDE｜夢の案内屋</title>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>DREAM<br>GUIDE</h1>
+  <p class="sub">あなたが訪れる夢をご案内します。</p>
+  <button id="dream" type="button">DREAM</button>
+
+  <section id="res" class="win res hide" aria-live="polite">
+    <div class="tb"><span>dream_guide.exe</span><span>_ □ ×</span></div>
+    <div class="body">
+      <div class="no" id="no"></div>
+      <p class="guide" id="g1"></p>
+      <p class="big" id="txt"></p>
+      <p class="guide" id="g2"></p>
+      <dl><dt>LOCATION</dt><dd id="lp"></dd><dt>CONDITION</dt><dd id="lc"></dd><dt>OBJECT</dt><dd id="lo"></dd></dl>
+      <div class="row">
+        <button class="btn" id="again" type="button">DREAM AGAIN</button>
+        <a class="btn x" id="share" target="_blank" rel="noopener">SHARE ON X</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="win">
+    <div class="tb"><span>dream_log.txt</span><span>_ □ ×</span></div>
+    <div class="body"><ul class="log" id="log"><li style="color:var(--mute)">まだ夢の記録はありません。</li></ul></div>
+  </section>
+  <footer>© DREAM GUIDE — 夢の案内屋はいつでも眠りの先に開かれています。</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
